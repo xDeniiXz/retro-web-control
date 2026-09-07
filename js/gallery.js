@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', function () {
         { src: 'assets/photos/photo6.jpg', caption: 'Keren', position: 'center 20%' },
         { src: 'assets/photos/photo7.jpg', caption: 'Gemesin', position: 'center 15%' },
         { src: 'assets/photos/photo8.jpg', caption: 'Ganteng', position: 'center 20%' },
-        { src: 'assets/photos/photo9.jpg', caption: 'Hehe😅', position: 'center 20%' },
+        { src: 'assets/photos/photo9.jpg', caption: 'Hehe :)', position: 'center 20%' },
     ];
 
     const photoStrip = document.getElementById('photo-strip');
@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', function () {
         const card = document.createElement('div');
         card.className = 'polaroid-card printing';
         card.innerHTML = `
-            <button class="delete-photo-btn" title="Hapus foto ini">✕</button>
+            <button class="delete-photo-btn" title="Hapus foto ini"><i class="fa-solid fa-xmark"></i></button>
             <div class="polaroid-frame">
                 <div class="polaroid-image-wrap">
                     <img src="${photo.src}" 
@@ -49,7 +49,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     <span class="date-dot">●</span>
                 </div>
                 <button class="change-photo-btn" title="Ganti foto ini">
-                    <span class="change-photo-icon">🔄</span>
+                    <span class="change-photo-icon"><i class="fa-solid fa-arrows-rotate"></i></span>
                     <span class="change-photo-text">Ganti Foto</span>
                 </button>
                 <input type="file" class="change-photo-input" accept="image/*" style="display:none">
@@ -153,7 +153,7 @@ document.addEventListener('DOMContentLoaded', function () {
         if (photos.length === 0) {
             photoStrip.innerHTML = `
                 <div class="no-photo-message">
-                    <span class="camera-icon">📷</span>
+                    <span class="camera-icon"><i class="fa-solid fa-camera-retro"></i></span>
                     <p>Tambahkan foto ke folder:</p>
                     <code>assets/photos/</code>
                 </div>`;
@@ -188,7 +188,8 @@ document.addEventListener('DOMContentLoaded', function () {
         }
 
         // Done printing
-        progressEl.textContent = `✅ ${photos.length} foto berhasil dicetak!`;
+        progressEl.textContent = '';
+        progressEl.innerHTML = `<i class="fa-solid fa-circle-check"></i> ${photos.length} foto berhasil dicetak!`;
         progressEl.classList.add('done');
 
         // Fade out progress after a moment
@@ -211,7 +212,7 @@ document.addEventListener('DOMContentLoaded', function () {
         btn.id = 'photobox-strip-btn';
         btn.className = 'photobox-strip-btn';
         btn.innerHTML = `
-            <span class="strip-btn-icon">🖨️</span>
+            <span class="strip-btn-icon"><i class="fa-solid fa-print"></i></span>
             <span class="strip-btn-text">Cetak Foto Strip</span>
         `;
         photoStrip.appendChild(btn);
@@ -280,6 +281,7 @@ document.addEventListener('DOMContentLoaded', function () {
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>HEYTML PhotoBox Strip</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
 <style>
 * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -407,7 +409,7 @@ body {
     <div class="strip-border-right"></div>
     ${sprockets}
     <div class="strip-header">
-        <h1>📸 HEYTML PhotoBox</h1>
+        <h1><i class="fa-solid fa-camera" style="margin-right:8px"></i>HEYTML PhotoBox</h1>
         <div class="subtitle">Happy Birthday, Afri Finda Viana!</div>
         <div class="date">${dateStamp}</div>
     </div>
@@ -415,7 +417,7 @@ body {
     ${photosHTML}
     <div class="strip-divider"></div>
     <div class="strip-footer">
-        <div class="made-by">Made with ❤️ by Neurrochmat</div>
+        <div class="made-by">Made with <i class="fa-solid fa-heart" style="color:#e91e63"></i> by Neurrochmat</div>
         <div class="info">${photoData.length} foto • ${dateStamp}</div>
     </div>
 </div>
@@ -449,18 +451,18 @@ body {
             modal.innerHTML = `
                 <div class="strip-modal-content">
                     <div class="strip-modal-header">
-                        <h3>📸 Foto Strip Siap!</h3>
-                        <button class="strip-modal-close" id="strip-modal-close">✕</button>
+                        <h3><i class="fa-solid fa-camera"></i> Foto Strip Siap!</h3>
+                        <button class="strip-modal-close" id="strip-modal-close"><i class="fa-solid fa-xmark"></i></button>
                     </div>
                     <div class="strip-preview-wrap">
                         <iframe id="strip-preview-frame" class="strip-preview-frame" sandbox="allow-same-origin"></iframe>
                     </div>
                     <div class="strip-modal-actions">
                         <button class="strip-action-btn print" id="strip-print-btn">
-                            <span>🖨️</span> Print
+                            <i class="fa-solid fa-print"></i> Print
                         </button>
                         <button class="strip-action-btn download" id="strip-open-btn">
-                            <span>🔗</span> Buka
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i> Buka
                         </button>
                     </div>
                 </div>
@@ -516,5 +518,5 @@ body {
     }
 
     startPrinting();
-    console.log('📸 Gallery printing', photos.length, 'photos');
+    console.log('Gallery printing', photos.length, 'photos');
 });

@@ -3,13 +3,13 @@
 document.addEventListener('DOMContentLoaded', function () {
     // Message content
     const messages = [
-        `Happy 21st Birthday, Viaaa! 🎂✨\n\nOn this special day, I want to say how grateful I am to have met someone as wonderful as you in my life.\n\nYou are the reason behind my smile ...`,
+        `Happy 21st Birthday, Viaaa!\n\nOn this special day, I want to say how grateful I am to have met someone as wonderful as you in my life.\n\nYou are the reason behind my smile ...`,
 
-        `Every moment with you is the most beautiful gift I've ever received. Your laughter is my favorite melody, and your smile is the most beautiful sight I always want to see.\n\nThank you for being a part of my life... 💕`,
+        `Every moment with you is the most beautiful gift I've ever received. Your laughter is my favorite melody, and your smile is the most beautiful sight I always want to see.\n\nThank you for being a part of my life...`,
 
-        `On your birthday, I pray that all your dreams come true. May happiness always be with you, may good health always protect you, and may success always come your way.\n\nMay you shine even brighter in this new year! ⭐`,
+        `On your birthday, I pray that all your dreams come true. May happiness always be with you, may good health always protect you, and may success always come your way.\n\nMay you shine even brighter in this new year!`,
 
-        `Thank you for all the beautiful moments we’ve shared. I hope that moving forward, your life is always filled with happiness and good things.\n\nHappy birthday and take care of yourself 😊. The moon always beautifull 💖 \n\nWith heart,\nNeurrochmat 💖`
+        `Thank you for all the beautiful moments we’ve shared. I hope that moving forward, your life is always filled with happiness and good things.\n\nHappy birthday and take care of yourself. The moon always beautifull \n\nWith heart,\nNeurrochmat`
     ];
 
     let currentPage = 1;
@@ -64,7 +64,7 @@ document.addEventListener('DOMContentLoaded', function () {
     // Update next button text based on typing state
     function updateNextButton() {
         if (isTyping) {
-            btnNext.textContent = 'SKIP ⏩';
+            btnNext.textContent = 'SKIP >>';
         } else if (currentPage === totalPages) {
             btnNext.textContent = 'GALLERY ▶';
         } else {
@@ -121,5 +121,5 @@ document.addEventListener('DOMContentLoaded', function () {
     // Initialize
     showPage(1);
 
-    console.log('💌 Message page loaded!');
+    console.log('Message page loaded!');
 });

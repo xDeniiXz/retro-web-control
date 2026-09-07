@@ -71,7 +71,7 @@ document.addEventListener('DOMContentLoaded', function () {
         audioPlayer.play().catch(err => {
             console.log('Audio play error:', err);
             // Show visible error message
-            songArtist.textContent = '⚠️ File tidak ditemukan';
+            songArtist.innerHTML = '<i class="fa-solid fa-triangle-exclamation"></i> File tidak ditemukan';
             songArtist.style.color = '#ff6b6b';
             isPlaying = false;
             updatePlayButton();
@@ -101,7 +101,9 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Update play button
     function updatePlayButton() {
-        btnPlay.textContent = isPlaying ? '⏸' : '▶';
+        btnPlay.innerHTML = isPlaying
+            ? '<i class="fa-solid fa-pause"></i>'
+            : '<i class="fa-solid fa-play"></i>';
     }
 
     // Format time
@@ -162,7 +164,7 @@ document.addEventListener('DOMContentLoaded', function () {
     initPlaylist();
     loadSong(0);
 
-    console.log('🎵 Music player loaded!');
-    console.log('💡 To add music, place MP3 files in assets/music/ folder');
-    console.log('💡 Then update the playlist array in js/music.js');
+    console.log('Music player loaded!');
+    console.log('To add music, place MP3 files in assets/music/ folder');
+    console.log('Then update the playlist array in js/music.js');
 });

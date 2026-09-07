@@ -464,6 +464,23 @@ body {
     box-shadow: none;
 }
 
+/* ===== FONT AWESOME ICON ALIGNMENT ===== */
+.fa-solid,
+.fa-regular {
+    vertical-align: middle;
+    line-height: inherit;
+}
+
+/* Icon-only buttons (control buttons, delete, close) */
+.control-btn .fa-solid {
+    font-size: inherit;
+}
+
+/* From-text heart */
+.from-text .fa-heart {
+    color: #e91e63;
+}
+
 /* ===== SCROLLBAR ===== */
 ::-webkit-scrollbar {
     width: 6px;

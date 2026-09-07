@@ -6,7 +6,9 @@ document.addEventListener('DOMContentLoaded', function () {
     function createHeart() {
         const heart = document.createElement('div');
         heart.className = 'heart';
-        heart.innerHTML = ['❤️', '💕', '💖', '💗', '💝', '🎂'][Math.floor(Math.random() * 5)];
+        const colors = ['#e91e63', '#ff69b4', '#ff1493', '#c71585', '#ff6eb4'];
+        const color = colors[Math.floor(Math.random() * colors.length)];
+        heart.innerHTML = `<i class="fa-solid fa-heart" style="color:${color}"></i>`;
         heart.style.left = Math.random() * 100 + 'vw';
         heart.style.animationDuration = (Math.random() * 3 + 4) + 's';
         heart.style.fontSize = (Math.random() * 20 + 10) + 'px';
@@ -80,7 +82,7 @@ document.addEventListener('DOMContentLoaded', function () {
         const bgmToggle = document.createElement('button');
         bgmToggle.id = 'bgm-toggle';
         bgmToggle.className = 'bgm-toggle';
-        bgmToggle.innerHTML = isMuted ? '🔇' : '🔊';
+        bgmToggle.innerHTML = isMuted ? '<i class="fa-solid fa-volume-xmark"></i>' : '<i class="fa-solid fa-volume-high"></i>';
         bgmToggle.title = 'Toggle musik background';
         document.body.appendChild(bgmToggle);
 
@@ -92,7 +94,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
         const updateMusicState = (mute) => {
             bgMusic.muted = mute;
-            bgmToggle.innerHTML = mute ? '🔇' : '🔊';
+            bgmToggle.innerHTML = mute ? '<i class="fa-solid fa-volume-xmark"></i>' : '<i class="fa-solid fa-volume-high"></i>';
             bgmToggle.classList.toggle('muted', mute);
             sessionStorage.setItem('bgm-muted', mute);
             
@@ -119,7 +121,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 modalContent.className = 'modal-content';
                 modalContent.innerHTML = `
                     <h3>Putar Musik Background?</h3>
-                    <p>Catatan: Kamu bisa mematikan/menyalakan musik lagi kapan saja melalui tombol volume di pojok kiri bawah layar 🔊</p>
+                    <p>Catatan: Kamu bisa mematikan/menyalakan musik kapan saja melalui tombol volume di pojok kiri bawah layar <i class="fa-solid fa-volume-high"></i></p>
                     <div class="modal-buttons">
                         <button class="modal-btn" id="btn-bgm-no">Tidak</button>
                         <button class="modal-btn" id="btn-bgm-yes">Ya</button>
