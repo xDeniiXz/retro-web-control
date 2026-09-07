@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="💌 Pesan spesial ulang tahun untuk Afri Finda Viana.">
+    <title>Message - Happy Birthday!</title>
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💌</text></svg>">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/message.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Main Console -->
+    <div class="gameboy-console">
+        <!-- Top Section -->
+        <div class="console-top">
+            <div class="power-section">
+                <div class="power-led"></div>
+                <span class="power-text">POWER</span>
+            </div>
+            <div class="brand-name">HEYTML-BOY</div>
+        </div>
+
+        <!-- Screen -->
+        <div class="screen-frame">
+            <div class="screen-inner">
+                <div class="screen-content message-screen">
+                    <div class="message-header">
+                        <span class="message-icon">💌</span>
+                        <h2>Pesan Untukmu</h2>
+                    </div>
+
+                    <div class="message-container">
+                        <!-- Message Pages -->
+                        <div class="message-page active" data-page="1">
+                            <p class="message-text" id="message-1"></p>
+                        </div>
+                        <div class="message-page" data-page="2">
+                            <p class="message-text" id="message-2"></p>
+                        </div>
+                        <div class="message-page" data-page="3">
+                            <p class="message-text" id="message-3"></p>
+                        </div>
+                        <div class="message-page" data-page="4">
+                            <p class="message-text" id="message-4"></p>
+                        </div>
+                    </div>
+
+                    <div class="message-nav">
+                        <button class="nav-btn btn-prev" id="btn-prev" disabled>
+                            ◀ KEMBALI
+                        </button>
+                        <span class="page-indicator">
+                            <span id="current-page">1</span> / <span id="total-pages">4</span>
+                        </span>
+                        <button class="nav-btn btn-next" id="btn-next">
+                            SELANJUTNYA ▶
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Controls Section -->
+        <div class="controls-section">
+            <div class="dpad">
+                <div class="dpad-up" role="button" aria-label="D-pad atas"></div>
+                <div class="dpad-down" role="button" aria-label="D-pad bawah"></div>
+                <div class="dpad-left" role="button" aria-label="D-pad kiri"></div>
+                <div class="dpad-right" role="button" aria-label="D-pad kanan"></div>
+                <div class="dpad-center"></div>
+            </div>
+
+            <div class="action-buttons">
+                <a href="index.html" class="btn-b" aria-label="Kembali ke Home">B</a>
+                <a href="gallery.html" class="btn-a" aria-label="Lanjut ke Gallery">A</a>
+            </div>
+        </div>
+
+        <!-- Bottom Section -->
+        <div class="console-bottom">
+            <div class="speaker-grille">
+                <div class="speaker-line"></div>
+                <div class="speaker-line"></div>
+                <div class="speaker-line"></div>
+                <div class="speaker-line"></div>
+                <div class="speaker-line"></div>
+                <div class="speaker-line"></div>
+            </div>
+            <div class="select-start">
+                <a href="index.html" class="btn-select">HOME</a>
+                <a href="gallery.html" class="btn-start">NEXT</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Floating Hearts Background -->
+    <div class="floating-hearts" id="floating-hearts"></div>
+
+    <script src="js/common.js"></script>
+    <script src="js/message.js"></script>
+</body>
+
+</html>
