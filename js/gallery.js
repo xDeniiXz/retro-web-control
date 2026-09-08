@@ -4,15 +4,14 @@
 document.addEventListener('DOMContentLoaded', function () {
     // Photo configuration
     const photos = [
-        { src: 'assets/photos/photo1.jpg', caption: 'Senyuman Manis', position: 'center top' },
-        { src: 'assets/photos/photo2.jpg', caption: 'Cantik', position: 'center 30%' },
-        { src: 'assets/photos/photo3.jpg', caption: 'comell', position: 'center 20%' },
-        { src: 'assets/photos/photo4.jpg', caption: 'Gaya Keren', position: 'center 25%' },
-        { src: 'assets/photos/photo5.jpg', caption: 'Cisss', position: 'center 25%' },
-        { src: 'assets/photos/photo6.jpg', caption: 'Keren', position: 'center 20%' },
-        { src: 'assets/photos/photo7.jpg', caption: 'Gemesin', position: 'center 15%' },
-        { src: 'assets/photos/photo8.jpg', caption: 'Ganteng', position: 'center 20%' },
-        { src: 'assets/photos/photo9.jpg', caption: 'Hehe :)', position: 'center 20%' },
+        { src: 'assets/photos/photo1.jpg', caption: 'Cantikk', position: 'center top' },
+        { src: 'assets/photos/photo2.jpg', caption: 'Senyum manis', position: 'center 30%' },
+        { src: 'assets/photos/photo3.jpg', caption: 'Cakepnyaa', position: 'center 20%' },
+        { src: 'assets/photos/photo4.jpg', caption: 'Lucukk', position: 'center 25%' },
+        { src: 'assets/photos/photo5.jpg', caption: 'Ciss', position: 'center 25%' },
+        { src: 'assets/photos/photo6.jpg', caption: 'Mata dede meyah', position: 'center 20%' },
+        { src: 'assets/photos/photo7.jpg', caption: 'Halaww', position: 'center 15%' },
+        { src: 'assets/photos/photo8.jpg', caption: 'Wlee', position: 'center 20%' },
     ];
 
     const photoStrip = document.getElementById('photo-strip');
@@ -280,7 +279,7 @@ document.addEventListener('DOMContentLoaded', function () {
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>HEYTML PhotoBox Strip</title>
+<title>PhotoBox Strip</title>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
 <style>
@@ -409,8 +408,8 @@ body {
     <div class="strip-border-right"></div>
     ${sprockets}
     <div class="strip-header">
-        <h1><i class="fa-solid fa-camera" style="margin-right:8px"></i>HEYTML PhotoBox</h1>
-        <div class="subtitle">Happy Birthday, Afri Finda Viana!</div>
+        <h1><i class="fa-solid fa-camera" style="margin-right:8px"></i>PhotoBox</h1>
+        <div class="subtitle">Happy Birthday, Dewi Lestari!</div>
         <div class="date">${dateStamp}</div>
     </div>
     <div class="strip-divider"></div>

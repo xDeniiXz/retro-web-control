@@ -3,13 +3,13 @@
 document.addEventListener('DOMContentLoaded', function () {
     // Message content
     const messages = [
-        `Happy 21st Birthday, Viaaa!\n\nOn this special day, I want to say how grateful I am to have met someone as wonderful as you in my life.\n\nYou are the reason behind my smile ...`,
+        `Happy 19th Birthday, Sayangg!\n\nDi hari spesial ini, aku mau ngungkapin betapa bersyukurnya aku bisa ketemu sama seseorang yang luar biasa kayak kamuu di dalam hidup akuu.\n\nKamu adalah alasan aku buat selalu tersenyum hihi >_< ...`,
 
-        `Every moment with you is the most beautiful gift I've ever received. Your laughter is my favorite melody, and your smile is the most beautiful sight I always want to see.\n\nThank you for being a part of my life...`,
+        `Setiap kali aku bersama kamu adalah hadiah terindah yang pernah aku terimaa. Ketawa kamuu adalah suara favoritkuu, dan senyuman kamu itu adalah pemandangan terindah yang selalu pengen ku liatt.\n\nMakasii dedee suda jadi bagian hidup akuu ^_^...`,
 
-        `On your birthday, I pray that all your dreams come true. May happiness always be with you, may good health always protect you, and may success always come your way.\n\nMay you shine even brighter in this new year!`,
+        `Di hari ulang tahun kamuu, aku berdoa semoga semua impian kamu menjadi nyataa. Semoga kamu bahagia selaluu, sehat selaluu, dan semoga kamu bisa meraih kesuksesan yaa, aamiin.\n\nSemoga ada hal-hal yang lebih baik di umur kamu yang ke 19 tahun inii!`,
 
-        `Thank you for all the beautiful moments we’ve shared. I hope that moving forward, your life is always filled with happiness and good things.\n\nHappy birthday and take care of yourself. The moon always beautifull \n\nWith heart,\nNeurrochmat`
+        `Terimakasii buat momen indah yang uda kita lalui bareng-barengg. Aku berharap hidup kamu selalu di iringi kebahagiaan dan hal-hal baik yaa.\n\nHappy birthday sayangg. You always prettiest and beatiful girl :3. \n\nWith heart,\nDenii`
     ];
 
     let currentPage = 1;

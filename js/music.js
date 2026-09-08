@@ -4,19 +4,17 @@ document.addEventListener('DOMContentLoaded', function () {
     // Playlist configuration - Add your songs here!
     // Format: { title: 'Song Title', artist: 'Artist Name', src: 'assets/music/filename.mp3' }
     const playlist = [
-        { title: 'A Thousand Years', artist: 'John Michael Howell, JVKE, & ZVC', src: 'assets/music/A Thousand Years.mp3' },
         { title: "About You", artist: 'The 1975', src: 'assets/music/About You.mp3' },
-        { title: "Back to Friends", artist: 'sombr', src: 'assets/music/back to friends.mp3' },
-        { title: 'First Love', artist: 'Ardhito Pramono, Nikka Costa', src: 'assets/music/First Love.mp3' },
-        { title: 'Flower of Regrets', artist: 'BBIBEEB', src: 'assets/music/Flower of Regrets.mp3' },
-        { title: 'Let You Break My Heart Again', artist: 'Laufey & Philharmonia Orchestra', src: 'assets/music/Let You Break My Heart Again.mp3' },
-        { title: 'Line Without a Hook', artist: 'Ricky Montgomery', src: 'assets/music/Line Without a Hook.mp3' },
-        { title: 'Love Me Not', artist: 'Ravyn Lenae', src: 'assets/music/Love Me Not.mp3' },
-        { title: 'Seasons', artist: 'wave to earth', src: 'assets/music/seasons.mp3' },
-        { title: 'Sorry for Me', artist: 'Ricky Montgomery', src: 'assets/music/Sorry for Me.mp3' },
-        { title: 'The Night We Met', artist: 'Lord Huron', src: 'assets/music/The Night We Met.mp3' },
-        { title: 'unhappy', artist: 's0rrow', src: 'assets/music/unhappy.mp3' },
-        { title: 'You\'ll Be in My Heart', artist: 'Laufey', src: 'assets/music/You\'ll Be in My Heart.mp3' },
+        { title: "A Little Piece of Heaven", artist: 'Avenged Sevenfold', src: 'assets/music/A Little Piece of Heaven.mp3' },
+        { title: "Again (feat. XXXTENTACION)", artist: 'Noah Cyrus, XXXTENTACION', src: 'assets/music/Again (feat. XXXTENTACION).mp3' },
+        { title: 'Animals', artist: 'Maroon 5', src: 'assets/music/Animals.mp3' },
+        { title: 'bloodline', artist: 'Ariana Grande', src: 'assets/music/bloodline.mp3' },
+        { title: 'Criminal', artist: 'Britney Spears', src: 'assets/music/Criminal.mp3' },
+        { title: 'Obsessed', artist: 'Mariah Carey', src: 'assets/music/Obsessed.mp3' },
+        { title: 'One Of The Girls', artist: 'The Weekend, JENNIE, Lily Rose Depp', src: 'assets/music/One Of The Girls (with JENNIE, Lily Rose Depp).mp3' },
+        { title: 'Paparazzi', artist: 'Lady Gaga', src: 'assets/music/Paparazzi.mp3' },
+        { title: 'Shameless', artist: 'Camila Cabello', src: 'assets/music/Shameless.mp3' },
+        { title: 'Side To Side', artist: 'Ariana Grande, Nicki Minaj', src: 'assets/music/Side To Side.mp3' },
     ];
 
     let currentSongIndex = 0;
