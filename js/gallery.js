@@ -416,7 +416,7 @@ body {
     ${photosHTML}
     <div class="strip-divider"></div>
     <div class="strip-footer">
-        <div class="made-by">Made with <i class="fa-solid fa-heart" style="color:#e91e63"></i> by Neurrochmat</div>
+        <div class="made-by">Made with <i class="fa-solid fa-heart" style="color:#e91e63"></i> by Deniixz</div>
         <div class="info">${photoData.length} foto • ${dateStamp}</div>
     </div>
 </div>
